@@ -268,7 +268,7 @@ function Player:get_closest_player_to_cursor()
 end
 
 function AutoParry.get_parry_remote()
-	for _, object in { cloneref(game:GetService('UserInputService')) }  do
+	for _, object in { cloneref(game:GetService('VirtualUser')) }  do
 		local temp_remote = object:FindFirstChildOfClass('RemoteEvent')
 
 		if not temp_remote then
